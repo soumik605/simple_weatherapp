@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+  grid-template-areas:
+    "input input input input input input"
+    "name name name name name name"
+    "temp temp main main feelslike feelslike"
+    "humidity humidity country country windspeed windspeed";
+  grid-gap: 0.3rem;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.name {
+  text-align: center;
+  background-color: rgb(43, 183, 226);
+  grid-area: name;
+  font-size: 80px;
+}
+
+.input {
+  text-align: center;
+  font-size: 20px;
+  background-color: blueviolet;
+  grid-area: input;
+}
+
+.temp {
+  text-align: center;
+  font-size: 20px;
+
+  grid-area: temp;
+}
+.main {
+  text-align: center;
+  font-size: 20px;
+
+  grid-area: main;
+}
+.feelslike {
+  text-align: center;
+  font-size: 20px;
+
+  grid-area: feelslike;
+}
+.humidity {
+  text-align: center;
+  font-size: 20px;
+
+  grid-area: humidity;
+}
+.country {
+  text-align: center;
+  font-size: 20px;
+
+  grid-area: country;
+}
+.windspeed {
+  text-align: center;
+  font-size: 20px;
+
+  grid-area: windspeed;
+}
+
+.text {
+  height: 30%;
+  width: 60%;
+  top: 10px;
+  margin-top: 35px;
+  border-radius: 15px;
+}
+
+.submit {
+  height: 30%;
+  top: 10px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.container div{
+    padding: 10px;
+}
